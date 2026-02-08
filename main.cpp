@@ -19,6 +19,7 @@ Resturant temp() {
 
     cout << "enter a max capacity" << endl;
     cin >> m;
+    //checks if max cap is a number that makes sense
     while(m<=0) {
         cout << "enter a valid max capacity" << endl;
         cin >> m;
@@ -29,6 +30,7 @@ Resturant temp() {
     cin >> one.typeOfCuisine;
 
     cout << "enter a location" << endl;
+    cin >> one.location;
 
     cout << "Is it currently full? (1/0) 1=full" << endl;
     cin >> one.full;
