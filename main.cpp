@@ -36,7 +36,36 @@ Resturant temp() {
     return one;
 }
 
+void Presenter(Resturant R) {
+    cout << "Name: " << R.name << endl;
+    cout << "Max capacity: " << R.maxCapacity << endl;
+    cout << "Cuisine: " << R.typeOfCuisine << endl;
+    cout << "Location " << R.location << endl;
+
+    if (R.full) {
+        cout << "The resturant is full" << endl;
+    }
+    else {
+        cout << "The resturant is not full" << endl;
+    }
+}
+
 int main() {
+    cout << "First resturant:" << endl;
     Resturant first = temp();
+    Presenter(first);
+
+    cout << "Second resturant:" << endl;
+    Resturant second = temp();
+    Presenter(second);
+
+    cout << "Third resturant:" << endl;
+    Resturant third = temp();
+    Presenter(third);
+
+    cout << "Fourth resturant:" << endl;
+    Resturant fourth = temp();
+    Presenter(fourth);
+
     return 0;
 }
