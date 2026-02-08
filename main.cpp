@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-struct Resturant {
+struct Restaurant {
     string name;
     int maxCapacity;
     string typeOfCuisine;
@@ -10,11 +10,11 @@ struct Resturant {
     bool full;
 };
 
-Resturant temp() {
-    Resturant one;
+Restaurant temp() {
+    Restaurant one;
     int m;
 
-    cout << "enter a name for the resturant" << endl;
+    cout << "enter a name for the restaurant" << endl;
     cin >> one.name;
 
     cout << "enter a max capacity" << endl;
@@ -38,35 +38,35 @@ Resturant temp() {
     return one;
 }
 
-void Presenter(Resturant R) {
+void Presenter(Restaurant R) {
     cout << "Name: " << R.name << endl;
     cout << "Max capacity: " << R.maxCapacity << endl;
     cout << "Cuisine: " << R.typeOfCuisine << endl;
     cout << "Location: " << R.location << endl;
 
     if (R.full) {
-        cout << "The resturant is full" << endl;
+        cout << "The restaurant is full" << endl;
     }
     else {
-        cout << "The resturant is not full" << endl;
+        cout << "The restaurant is not full" << endl;
     }
 }
 
 int main() {
     cout << "First resturant:" << endl;
-    Resturant first = temp();
+    Restaurant first = temp();
     Presenter(first);
 
     cout << "Second resturant:" << endl;
-    Resturant second = temp();
+    Restaurant second = temp();
     Presenter(second);
 
     cout << "Third resturant:" << endl;
-    Resturant third = temp();
+    Restaurant third = temp();
     Presenter(third);
 
     cout << "Fourth resturant:" << endl;
-    Resturant fourth = temp();
+    Restaurant fourth = temp();
     Presenter(fourth);
 
     return 0;
