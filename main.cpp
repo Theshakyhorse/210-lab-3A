@@ -12,23 +12,27 @@ struct Resturant {
 
 Resturant temp() {
     Resturant one;
-    string n;
     int m;
-    string t;
-    string l;
-    bool f;
+
     cout << "enter a name for the resturant" << endl;
-    cin >> n;
-    cout << "enter a max capacity for the resturant" << endl;
-    while(!(cin >> m)) {
-        cin.clear();
-        cout << "enter an integer for max cap" << endl;
+    cin >> one.name;
+
+    cout << "enter a max capacity" << endl;
+    cin >> m;
+    while(m<=0) {
+        cout << "enter a valid max capacity" << endl;
+        cin >> m;
     }
-    
-    cout << "enter a type of cuisine for the resturant" << endl;
-    cin >> t;
-    cout << "decide whether it is currently full(1=full/0)" << endl;
-    cin >> f;
+    one.maxCapacity = m;
+
+    cout << "enter a type of cuisine" << endl;
+    cin >> one.typeOfCuisine;
+
+    cout << "enter a location" << endl;
+
+    cout << "Is it currently full? (1/0) 1=full" << endl;
+    cin >> one.full;
+
     return one;
 }
 
