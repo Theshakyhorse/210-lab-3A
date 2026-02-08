@@ -42,7 +42,7 @@ void Presenter(Resturant R) {
     cout << "Name: " << R.name << endl;
     cout << "Max capacity: " << R.maxCapacity << endl;
     cout << "Cuisine: " << R.typeOfCuisine << endl;
-    cout << "Location " << R.location << endl;
+    cout << "Location: " << R.location << endl;
 
     if (R.full) {
         cout << "The resturant is full" << endl;
