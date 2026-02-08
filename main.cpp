@@ -17,8 +17,14 @@ Resturant temp() {
     string t;
     string l;
     bool f;
+    cout << "enter a name for the resturant" << endl;
     cin >> n;
-
+    cout << "enter a max capacity for the resturant" << endl;
+    cin >> m;
+    cout << "enter a type of cuisine for the resturant" << endl;
+    cin >> t;
+    cout << "decide whether it is currently full(1=full/0)" << endl;
+    cin >> f;
 }
 
 int main() {
